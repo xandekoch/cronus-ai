@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronus AI</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--Swiper JS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!--Animate-->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+</head>
+
+<body id="body" class="">
+    <header id="navigationBar" class="">
+        <div class="wrapper">
+            <div class="logo-name">
+                <a class="logo" onclick="closeMenu()" href="#home">
+                    <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="mask0_2636_415" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="12" y="6"
+                            width="38" height="50">
+                            <path d="M12.3044 55.8H49.7524V6.19999H12.3044V55.8Z" fill="white" />
+                        </mask>
+                        <g mask="url(#mask0_2636_415)">
+                            <mask id="mask1_2636_415" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="12"
+                                y="6" width="38" height="50">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M32.3046 51.3495L47.4326 36.2448C50.5255 33.157 50.5255 28.1202 47.4326 25.0325L33.0292 10.651L30.949 12.7274L28.6466 15.0266L26.9752 16.6954L26.0891 15.8106L25.3038 15.0266L24.895 14.6184L22.6294 16.8808L22.7411 16.9918L24.8582 19.1057L23.7066 20.2552L31.2984 27.8354C32.8445 29.3796 32.8445 31.8977 31.2984 33.4419L22.9827 41.7447L24.1342 42.8943L22.0171 45.0081L21.9054 45.1192L24.171 47.3809L24.5798 46.9734L25.3651 46.1893L26.2506 45.3045L27.922 46.9734L30.225 49.2725L32.3046 51.3495ZM23.3165 6.99821L24.3938 8.07353L23.3165 9.14884L22.2399 8.07353L23.3165 6.99821ZM18.4508 10.1131L19.2685 10.9288L18.4515 11.7444L17.6339 10.9288L18.4508 10.1131ZM19.5836 7.42446L20.6053 8.44423L19.5843 9.464L18.5626 8.44423L19.5836 7.42446ZM15.6473 9.38973L16.4081 10.1499L15.6473 10.91L14.8858 10.1499L15.6473 9.38973ZM13.3442 10.7247L13.66 11.0398L13.3442 11.355L13.0284 11.0398L13.3442 10.7247ZM15.573 11.9485L16.0367 12.4122L15.573 12.8759L15.1087 12.4122L15.573 11.9485ZM17.8199 13.9325L18.507 14.6184L17.8199 15.3049L17.1327 14.6184L17.8199 13.9325ZM19.6211 12.3192L20.3638 13.0613L19.6211 13.8027L18.8784 13.0613L19.6211 12.3192ZM21.7937 17.2702L23.0007 18.4753L21.7937 19.6804L20.5866 18.4753L21.7937 17.2702ZM20.3083 15.3785L21.1252 16.1949L20.3083 17.0106L19.4913 16.1949L20.3083 15.3785ZM22.2955 12.8759L23.6511 14.2296L22.2955 15.5826L20.9392 14.229L22.2955 12.8759ZM21.348 9.64936L22.4996 10.7989L21.348 11.9485L20.1965 10.7989L21.348 9.64936ZM23.5025 10.7989L24.4681 11.7632L23.5025 12.7274L22.537 11.7632L23.5025 10.7989ZM25.6939 12.6163L26.9009 13.8214L25.6939 15.0266L24.4868 13.8214L25.6939 12.6163ZM26.1763 8.64832L27.7734 10.2429L26.1763 11.8374L24.5792 10.2429L26.1763 8.64832ZM27.4395 6.20061L29.1103 7.86944L27.4395 9.53828L25.7681 7.86944L27.4395 6.20061ZM29.6864 8.74067L30.7637 9.81598L29.6864 10.8919L28.6092 9.81663L29.6864 8.74067ZM26.5664 12.9496L28.8694 10.651L30.949 12.7274L33.252 15.0266L30.949 17.3257L28.6466 15.0266L27.7605 14.1424L26.9752 13.3577L26.5664 12.9496ZM22.5926 55.0017L23.6698 53.927L22.5926 52.8511L21.5153 53.927L22.5926 55.0017ZM17.7269 51.8869L18.5438 51.0712L17.7269 50.2555L16.9099 51.0712L17.7269 51.8869ZM18.8597 54.5755L19.8814 53.5557L18.8597 52.5366L17.8386 53.5557L18.8597 54.5755ZM14.9227 52.6102L15.6841 51.85L14.9227 51.0899L14.1612 51.85L14.9227 52.6102ZM12.6203 51.2753L12.9361 50.9601L12.6203 50.6449L12.3044 50.9601L12.6203 51.2753ZM14.8484 50.0514L15.3127 49.5877L14.8484 49.124L14.3847 49.5877L14.8484 50.0514ZM17.0959 48.0674L17.783 47.3815L17.0959 46.695L16.4087 47.3815L17.0959 48.0674ZM18.8971 49.6813L19.6398 48.9393L18.8971 48.1972L18.1538 48.9393L18.8971 49.6813ZM21.0697 44.7297L22.2768 43.5246L21.0697 42.3195L19.8626 43.5246L21.0697 44.7297ZM19.5843 46.6214L20.4013 45.8057L19.5843 44.9894L18.7667 45.8057L19.5843 46.6214ZM21.5709 49.1246L22.9271 47.771L21.5709 46.4173L20.2153 47.771L21.5709 49.1246ZM20.6241 52.3506L21.7756 51.201L20.6241 50.0514L19.4725 51.201L20.6241 52.3506ZM22.7779 51.201L23.7441 50.2374L22.7779 49.2725L21.8124 50.2374L22.7779 51.201ZM24.9692 49.3843L26.1763 48.1785L24.9692 46.9734L23.7622 48.1785L24.9692 49.3843ZM25.4523 53.3523L27.0495 51.757L25.4523 50.1625L23.8552 51.757L25.4523 53.3523ZM26.7149 55.7993L28.3863 54.1305L26.7149 52.4616L25.0435 54.1305L26.7149 55.7993ZM28.9624 53.2593L30.039 52.1839L28.9618 51.1086L27.8852 52.1839L28.9624 53.2593ZM25.8424 49.0504L28.1448 51.3495L30.225 49.2725L32.5281 46.9734L30.225 44.6742L27.922 46.9734L27.0365 47.8581L26.2512 48.6422L25.8424 49.0504Z"
+                                    fill="white" />
+                            </mask>
+                            <g mask="url(#mask1_2636_415)">
+                                <path d="M12.3044 55.7993V6.20061H49.7524V55.7993H12.3044Z"
+                                    fill="url(#paint0_linear_2636_415)" />
+                            </g>
+                        </g>
+                        <defs>
+                            <linearGradient id="paint0_linear_2636_415" x1="20.5" y1="-5.50001" x2="51.6527"
+                                y2="-7.39074" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#0098D9" />
+                                <stop offset="1" stop-color="#33CC33" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </a>
+                <h3>Cronus <span>AI</span></h3>
+            </div>
+
+            <div class="menu">
+                <ul class="options">
+                    <li><a onclick="closeMenu()" href="#home">Sobre</a></li>
+                    <li><a onclick="closeMenu()" href="#services">Artigos</a></li>
+                    <li><a onclick="closeMenu()" href="#about">Ebook Grátis</a></li>
+                    <li><a onclick="closeMenu()" href="#about">Newsletter</a></li>
+                </ul>
+
+                <a class="button" onclick="closeMenu()" href="#contato">
+                    FALE COM O NOSSO TIME
+                </a>
+
+                <ul class="social-links">
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/agenciacronus">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M17.5 6.49997H17.51" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/agenciacronus">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18 1.99997H15C13.6739 1.99997 12.4021 2.52675 11.4645 3.46444C10.5268 4.40212 10 5.67389 10 6.99997V9.99997H7V14H10V22H14V14H17L18 9.99997H14V6.99997C14 6.73475 14.1054 6.4804 14.2929 6.29286C14.4804 6.10533 14.7348 5.99997 15 5.99997H18V1.99997Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.youtube.com/xandekoch">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22.5396 6.42C22.4208 5.94541 22.1789 5.51057 21.8382 5.15941C21.4976 4.80824 21.0703 4.55318 20.5996 4.42C18.8796 4 11.9996 4 11.9996 4C11.9996 4 5.1196 4 3.3996 4.46C2.92884 4.59318 2.50157 4.84824 2.16094 5.19941C1.82031 5.55057 1.57838 5.98541 1.4596 6.46C1.14481 8.20556 0.990831 9.97631 0.999595 11.75C0.988374 13.537 1.14236 15.3213 1.4596 17.08C1.59055 17.5398 1.8379 17.9581 2.17774 18.2945C2.51758 18.6308 2.93842 18.8738 3.3996 19C5.1196 19.46 11.9996 19.46 11.9996 19.46C11.9996 19.46 18.8796 19.46 20.5996 19C21.0703 18.8668 21.4976 18.6118 21.8382 18.2606C22.1789 17.9094 22.4208 17.4746 22.5396 17C22.852 15.2676 23.0059 13.5103 22.9996 11.75C23.0108 9.96295 22.8568 8.1787 22.5396 6.42Z"
+                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M9.75 15.02L15.5 11.75L9.75 8.48001V15.02Z" stroke="#FFFAF1" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <path d="M10 20H30" stroke="url(#paint0_linear_2636_410)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M10 12H30" stroke="url(#paint1_linear_2636_410)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M18 28L30 28" stroke="url(#paint2_linear_2636_410)" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <defs>
+                        <linearGradient id="paint0_linear_2636_410" x1="3.83333" y1="21.7417" x2="23.7595" y2="3.09918"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#0098D9" />
+                            <stop offset="1" stop-color="#33CC33" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_2636_410" x1="3.83333" y1="13.7417" x2="23.7595" y2="-4.90082"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#0098D9" />
+                            <stop offset="1" stop-color="#33CC33" />
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_2636_410" x1="14.3" y1="29.7417" x2="31.3484" y2="20.1716"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#0098D9" />
+                            <stop offset="1" stop-color="#33CC33" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </button>
+
+            <button aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()" class="close-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="wrapper">
+            <h1>Economize <span>Tempo</span> e <span>Dinheiro</span> com Inteligência Artificial</h1>
+            <p>Pare de desperdiçar incontáveis horas ou gastar dinheiro contratando funcionários para realizar tarefas
+                repetitivas. O futuro chegou, não seja deixado para trás.</p>
+            <a href="#contato" class="button">Fale com o Nosso Time</a>
+            <img src="./assets/home-graph.png" alt="">
+        </div>
+    </section>
+
+    <section id="cronus-em-numeros">
+        <div class="wrapper">
+            <h2>Cronus em <span>Números</span></h2>
+            <div class="numbers">
+                <div class="number">
+                    <h3>+20</h3>
+                    <div class="line"></div>
+                    <p>projetos</p>
+                </div>
+                <div class="number">
+                    <h3>+3960</h3>
+                    <div class="line"></div>
+                    <p>horas poupadas</p>
+                </div>
+                <div class="number">
+                    <h3>+R$ 120.000</h3>
+                    <div class="line"></div>
+                    <p>economizados</p>
+                </div>
+                <div class="number">
+                    <h3>+54%</h3>
+                    <div class="line"></div>
+                    <p>satisfação dos clientes</p>
+                </div>
+            </div>
+    </section>
+
+    <section id="servicos">
+        <div class="wrapper">
+            <h4>NOSSOS SERVIÇOS</h4>
+            <h2>O que fazemos</h2>
+            <img src="./assets/servicos-dashboard.png" alt="">
+            <div class="servicos-oferecidos">
+                <div class="servicos">
+                    <h3>Feito para Você</h3>
+                    <div class="texts">
+                        <div class="text">
+                            <img src="./assets/verificado-icon.png" alt="">
+                            <p>Chatbot Inteligente para atendimento ao cliente e agendamentos.</p>
+                        </div>
+                        <div class="text">
+                            <img src="./assets/verificado-icon.png" alt="">
+                            <p>Automação de captura de leads e respostas de email.</p>
+                        </div>
+                        <div class="text">
+                            <img src="./assets/verificado-icon.png" alt="">
+                            <p>Automações internas na sua rotina de trabalho feitas sob medida para você.</p>
+                        </div>
+                        <div class="text">
+                            <img src="./assets/verificado-icon.png" alt="">
+                            <p>Bot inteligente que auxilia você e seus funcionários no dia a dia.</p>
+                        </div>
+                        <div class="text">
+                            <img src="./assets/verificado-icon.png" alt="">
+                            <p>Bot para treinar novos funcionários e sanar as dúvidas..</p>
+                        </div>
+                        <div class="text">
+                            <img src="./assets/verificado-icon.png" alt="">
+                            <p>Assistente virtual para atas de reuniões, que sintetiza os pontos discutidos e os
+                                compromissos assumidos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="servicos">
+                    <h3>Feito com Você</h3>
+                    <div class="texts">
+                        <div class="text">
+                            <img src="./assets/verificado-icon.png" alt="">
+                            <p>Chatbot Inteligente para atendimento ao cliente e agendamentos.</p>
+                        </div>
+                        <div class="text">
+                            <img src="./assets/verificado-icon.png" alt="">
+                            <p>Chatbot Inteligente para atendimento ao cliente e agendamentos.</p>
+                        </div>
+                        <div class="text">
+                            <img src="./assets/verificado-icon.png" alt="">
+                            <p>Chatbot Inteligente para atendimento ao cliente e agendamentos.</p>
+                        </div>
+                        <div class="text">
+                            <img src="./assets/verificado-icon.png" alt="">
+                            <p>Chatbot Inteligente para atendimento ao cliente e agendamentos.</p>
+                        </div>
+                        <div class="text">
+                            <img src="./assets/verificado-icon.png" alt="">
+                            <p>Chatbot Inteligente para atendimento ao cliente e agendamentos.</p>
+                        </div>
+                        <div class="text">
+                            <img src="./assets/verificado-icon.png" alt="">
+                            <p>Chatbot Inteligente para atendimento ao cliente e agendamentos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos">
+        <div class="wrapper">
+            <h4>NOSSA PRIORIDADE</h4>
+            <h2>Nossos clientes em primeiro lugar, Sempre.</h2>
+            <p>Nos orgulhamos quando nossos clientes se tornam amigos, pois isso é uma recompensa do nosso
+                comprometimento.</p>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p>“O chatbot aumentou em 10x nossa capacidade de atendimento aos clientes.”</p>
+                        <p>-Alexandre Koch</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>“O chatbot aumentou em 10x nossa capacidade de atendimento aos clientes.”</p>
+                        <p>-Marcos Koch</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>“O chatbot aumentou em 10x nossa capacidade de atendimento aos clientes.”</p>
+                        <p>-Junior Koch</p>
+                    </div>
+                </div>
+                <div class="arrows">
+                    <div class="swiper-button-next"><img src="./assets/angle-right.png" alt=""></div>
+                    <div class="swiper-button-prev"><img src="./assets/angle-left.png" alt=""></div>
+                </div>
+            </div>
+
+            <a href="#contato" class="button">FALE COM O NOSSO TIME</a>
+        </div>
+    </section>
+
+    <section id="nosso-time">
+        <div class="wrapper">
+            <h2>Conheça nosso <span>Time</span></h2>
+            <div class="members">
+                <div class="member">
+                    <img src="./assets/foto-ruan.png" alt="">
+                    <h3>Ruan Matos<br><span>CEO</span></h3>
+                </div>
+                <div class="member">
+                    <img src="./assets/foto-alexandre.png" alt="">
+                    <h3>Aleandre Koch<br><span>CTO/Engenheiro de Prompt</span></h3>
+                </div>
+                <div class="member">
+                    <img src="./assets/foto-thyago.png" alt="">
+                    <h3>Thyago Monnerat<br><span>Desenvolvedor de Chatbot</span></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="wrapper">
+            <h2>Reunião Estratégica <span>Gratuita</span></h2>
+            <img src="./assets/foto-ruan-circular.png" alt="">
+            <h4>AGENDE SUA REUNIÃO COM RUAN</h4>
+            <p>Nesta chamada sem compromisso, iremos elaborar estratégias de automação com IA a fim de impulsionar o
+                crescimento da sua empresa e melhorar a experiência do cliente.
+
+                Basta encontrar um horário que se adeque à sua agenda. Estamos ansiosos para falar com você.</p>
+
+            <!-- Calendly inline widget begin -->
+            <div class="calendly-inline-widget"
+                data-url="https://calendly.com/cronus-agencia/consultoria?hide_event_type_details=1&hide_gdpr_banner=1"
+                style="min-width:320px;height:750px;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <!-- Calendly inline widget end -->
+
+            <div class="reuniao-para">
+                <h3>Essa reunião é perfeita para:</h3>
+                <div class="texts">
+                    <div class="text">
+                        <img src="./assets/verificado-icon.png" alt="">
+                        <p>Empresas buscando ganhar tempo automatizando tarefas repetitivas, liberando tempo para
+                            decisões estratégicas.</p>
+                    </div>
+                    <div class="text">
+                        <img src="./assets/verificado-icon.png" alt="">
+                        <p>Empresas buscando economizar muito dinheiro com IAs diminuindo o quadro de funcionários.</p>
+                    </div>
+                    <div class="text">
+                        <img src="./assets/verificado-icon.png" alt="">
+                        <p>Empresas que querem aprimorar o atendimento ao cliente, com respostas instantâneas e 24/7.
+                        </p>
+                    </div>
+                    <div class="text">
+                        <img src="./assets/verificado-icon.png" alt="">
+                        <p>Empresas que buscam agilizar sua rotina de trabalho e diminuir o estresse.</p>
+                    </div>
+                    <div class="text">
+                        <img src="./assets/verificado-icon.png" alt="">
+                        <p>Empresas que procuram uma agência confiável que possa fazer de sua empresa uma prioridade.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter-ebook">
+        <div class="wrapper">
+            <div class="container">
+                <h2>Inscreva-se na nossa <span>Newsletter</span> e ganhe um <span>eBook</span> grátis</h2>
+                <p>Acompanhe como a IA está revolucionando diversos setores e trazendo impactos significativos para as
+                    empresas.</p>
+                <form action="" method="get">
+                    <div class="input-card">
+                        <img src="./assets/nome-input-icon.png" alt="">
+                        <input type="text" class="input-text" name="nome" id="nome" placeholder="Primeiro Nome">
+                    </div>
+
+                    <div class="input-card">
+                        <img src="./assets/email-input-icon.png" alt="">
+                        <input type="email" class="input-text" name="email" id="email" placeholder="Email">
+                    </div>
+                    <input type="submit" value="Inscreva-se" id="submit">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrapper">
+            <div class="logo">
+                <svg width="60" height="61" viewBox="0 0 60 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0_2636_232" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="11" y="6"
+                        width="38" height="49">
+                        <path d="M11.9075 54.8999H48.1475V6.0999H11.9075V54.8999Z" fill="white" />
+                    </mask>
+                    <g mask="url(#mask0_2636_232)">
+                        <mask id="mask1_2636_232" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="11" y="6"
+                            width="38" height="49">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M31.2625 50.5214L45.9025 35.6603C48.8956 32.6223 48.8956 27.6667 45.9025 24.6288L31.9637 10.4793L29.9506 12.5222L27.7225 14.7843L26.105 16.4262L25.2475 15.5557L24.4875 14.7843L24.0918 14.3827L21.8993 16.6086L22.0075 16.7179L24.0562 18.7976L22.9418 19.9286L30.2887 27.3865C31.785 28.9058 31.785 31.3833 30.2887 32.9026L22.2412 41.0715L23.3556 42.2025L21.3068 44.2822L21.1987 44.3915L23.3912 46.6168L23.7868 46.2158L24.5468 45.4444L25.4037 44.5739L27.0212 46.2158L29.25 48.4779L31.2625 50.5214ZM22.5643 6.88542L23.6068 7.94339L22.5643 9.00136L21.5225 7.94339L22.5643 6.88542ZM17.8556 9.95004L18.6468 10.7526L17.8562 11.5551L17.065 10.7526L17.8556 9.95004ZM18.9518 7.30479L19.9406 8.30812L18.9525 9.31144L17.9637 8.30812L18.9518 7.30479ZM15.1425 9.23837L15.8787 9.98626L15.1425 10.7341L14.4056 9.98626L15.1425 9.23837ZM12.9137 10.5518L13.2193 10.8619L12.9137 11.1719L12.6081 10.8619L12.9137 10.5518ZM15.0706 11.7559L15.5193 12.2121L15.0706 12.6684L14.6212 12.2121L15.0706 11.7559ZM17.245 13.7079L17.91 14.3827L17.245 15.0582L16.58 14.3827L17.245 13.7079ZM18.9881 12.1206L19.7068 12.8507L18.9881 13.5802L18.2693 12.8507L18.9881 12.1206ZM21.0906 16.9917L22.2587 18.1774L21.0906 19.3631L19.9225 18.1774L21.0906 16.9917ZM19.6531 15.1306L20.4437 15.9338L19.6531 16.7363L18.8625 15.9338L19.6531 15.1306ZM21.5762 12.6684L22.8881 14.0002L21.5762 15.3314L20.2637 13.9995L21.5762 12.6684ZM20.6593 9.4938L21.7737 10.6248L20.6593 11.7559L19.545 10.6248L20.6593 9.4938ZM22.7443 10.6248L23.6787 11.5735L22.7443 12.5222L21.81 11.5735L22.7443 10.6248ZM24.865 12.4129L26.0331 13.5986L24.865 14.7843L23.6968 13.5986L24.865 12.4129ZM25.3318 8.50891L26.8775 10.0778L25.3318 11.6466L23.7862 10.0778L25.3318 8.50891ZM26.5543 6.10068L28.1712 7.7426L26.5543 9.38451L24.9368 7.7426L26.5543 6.10068ZM28.7287 8.59977L29.7712 9.65775L28.7287 10.7163L27.6862 9.65838L28.7287 8.59977ZM25.7093 12.7408L27.9381 10.4793L29.9506 12.5222L32.1793 14.7843L29.9506 17.0464L27.7225 14.7843L26.865 13.9144L26.105 13.1424L25.7093 12.7408ZM21.8637 54.1147L22.9062 53.0573L21.8637 51.9987L20.8212 53.0573L21.8637 54.1147ZM17.155 51.0501L17.9456 50.2475L17.155 49.445L16.3643 50.2475L17.155 51.0501ZM18.2512 53.6953L19.24 52.692L18.2512 51.6893L17.2631 52.692L18.2512 53.6953ZM14.4412 51.7617L15.1781 51.0138L14.4412 50.266L13.7043 51.0138L14.4412 51.7617ZM12.2131 50.4483L12.5187 50.1382L12.2131 49.8282L11.9075 50.1382L12.2131 50.4483ZM14.3693 49.2442L14.8187 48.788L14.3693 48.3317L13.9206 48.788L14.3693 49.2442ZM16.5443 47.2922L17.2093 46.6174L16.5443 45.9419L15.8793 46.6174L16.5443 47.2922ZM18.2875 48.8801L19.0062 48.15L18.2875 47.4199L17.5681 48.15L18.2875 48.8801ZM20.39 44.0084L21.5581 42.8227L20.39 41.637L19.2218 42.8227L20.39 44.0084ZM18.9525 45.8695L19.7431 45.067L18.9525 44.2638L18.1612 45.067L18.9525 45.8695ZM20.875 48.3324L22.1875 47.0005L20.875 45.6687L19.5631 47.0005L20.875 48.3324ZM19.9587 51.5063L21.0731 50.3752L19.9587 49.2442L18.8443 50.3752L19.9587 51.5063ZM22.0431 50.3752L22.9781 49.4272L22.0431 48.4779L21.1087 49.4272L22.0431 50.3752ZM24.1637 48.5878L25.3318 47.4015L24.1637 46.2158L22.9956 47.4015L24.1637 48.5878ZM24.6312 52.4918L26.1768 50.9223L24.6312 49.3535L23.0856 50.9223L24.6312 52.4918ZM25.8531 54.8994L27.4706 53.2575L25.8531 51.6156L24.2356 53.2575L25.8531 54.8994ZM28.0281 52.4003L29.07 51.3424L28.0275 50.2844L26.9856 51.3424L28.0281 52.4003ZM25.0087 48.2593L27.2368 50.5214L29.25 48.4779L31.4787 46.2158L29.25 43.9537L27.0212 46.2158L26.1643 47.0863L25.4043 47.8577L25.0087 48.2593Z"
+                                fill="white" />
+                        </mask>
+                        <g mask="url(#mask1_2636_232)">
+                            <path d="M11.9075 54.8994V6.10068H48.1475V54.8994H11.9075Z" fill="#2C2F35" />
+                        </g>
+                    </g>
+                </svg>
+
+                <h3>Cronus AI</h3>
+            </div>
+
+            <p>Moldando o seu sucesso com Inteligência Artificial.</p>
+
+            <div class="social-icons">
+                <a href="#">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.3883 0H20.5891C25.4957 0 30.1441 2.06365 34.5342 6.19094C37.6202 9.89656 39.3181 13.2508 39.628 16.2536C39.8604 17.672 39.9766 18.5728 39.9766 18.9562V20.5854C39.9766 23.2176 39.0728 26.2652 37.2651 29.728C34.631 33.9959 30.8801 36.9604 26.0122 38.6215C23.546 39.2476 21.6156 39.5607 20.2211 39.5607H19.7563C14.656 39.5607 9.92369 37.529 5.5594 33.4656C1.85362 29.4022 0.000732422 24.6807 0.000732422 19.3012V19.0712C0.000732422 18.8923 0.0394688 18.7389 0.116941 18.6112C0.116941 18.5217 0.0782051 18.477 0.000732422 18.477C0.504305 14.6691 1.53082 11.5897 3.08027 9.2385C5.53357 5.29009 9.31682 2.47893 14.43 0.805014C16.341 0.268338 17.9938 0 19.3883 0ZM16.6767 12.6311L16.7929 16.2536C16.7929 16.3686 16.6767 16.49 16.4443 16.6178H14.43V20.7004H16.4443C16.5605 20.7004 16.6767 20.8218 16.7929 21.0645V31.1272L16.851 31.8364H21.0539V20.9495C21.0798 20.7834 21.1572 20.7004 21.2864 20.7004H24.7145C24.8695 20.7004 25.0696 19.4162 25.3149 16.8478V16.6178H21.2864C21.1314 16.6178 21.0539 16.5411 21.0539 16.3878V13.5702C21.0539 12.3691 21.7641 11.7047 23.1844 11.5769H25.5473V8.06931C25.5473 7.83931 24.721 7.7243 23.0682 7.7243H22.4678C19.7434 7.7243 17.9679 8.73377 17.1416 10.7527C16.9866 11.1744 16.8317 11.8005 16.6767 12.6311Z"
+                            fill="url(#paint0_linear_2636_246)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_2636_246" x1="-12.3252" y1="68.9015" x2="62.1986"
+                                y2="65.3788" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#0098D9" />
+                                <stop offset="1" stop-color="#33CC33" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </a>
+
+                <a href="#">
+                    <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.3964 0H20.1922C24.5377 0 28.7316 1.72268 32.7739 5.16805C37.0688 9.70488 39.2163 14.4653 39.2163 19.4492V21.3823C39.2163 24.2754 38.1425 27.6747 35.9951 31.5803C33.3423 35.5254 29.7295 38.2475 25.1567 39.7466C23.0345 40.2989 21.266 40.5751 19.8512 40.5751H19.7375C14.4446 40.5751 9.71386 38.4184 5.54525 34.1052C2.00825 29.8971 0.239746 25.2945 0.239746 20.2974C0.239746 14.9584 2.24194 10.0731 6.24634 5.64146C10.4149 1.88049 14.7983 0 19.3964 0ZM20.5522 16.806V17.7726C20.5522 17.9304 20.4701 18.0093 20.3059 18.0093C17.8932 17.6674 15.8215 16.7863 14.0909 15.3661L12.4803 13.8078H12.3477C12.3477 13.9393 12.1961 14.2614 11.8929 14.7743V16.2143C11.994 17.0296 12.5308 17.9501 13.5035 18.9758V19.0942C12.973 19.0942 12.4361 18.9364 11.8929 18.6207V18.7391C11.8929 20.2777 12.853 21.5993 14.773 22.7039L14.5457 22.8223H13.9772L13.3898 22.7039V22.9406C14.2741 24.6238 15.392 25.4655 16.7437 25.4655V25.8205C15.2278 26.7805 13.7246 27.2605 12.234 27.2605H11.5518V27.4972C13.7246 28.536 15.6068 29.0555 17.1984 29.0555C20.5333 29.0555 23.3755 27.655 25.7251 24.854C27.4178 22.408 28.2642 20.087 28.2642 17.8909V17.0624C29.4895 15.8395 30.1085 15.1557 30.1211 15.011V14.8927C29.679 15.1294 29.06 15.3332 28.2642 15.5041L28.1505 15.2477C28.8705 14.8138 29.4074 14.2154 29.7611 13.4527V13.3343H29.6474C28.5105 13.8998 27.8221 14.1825 27.582 14.1825H27.241C26.3946 13.4593 25.6241 13.0582 24.9293 12.9793H24.0008C22.7123 12.9793 21.6765 13.7354 20.8933 15.2477C20.6659 15.6422 20.5522 16.1617 20.5522 16.806Z"
+                            fill="url(#paint0_linear_2636_247)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_2636_247" x1="-11.778" y1="70.6683" x2="60.8983"
+                                y2="67.4025" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#0098D9" />
+                                <stop offset="1" stop-color="#33CC33" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                </a>
+
+                <a href="#">
+                    <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.0432 0H21.8917C24.9404 0 28.409 1.28215 32.2974 3.84645C35.2299 6.17404 37.355 8.86327 38.6727 11.9141C39.8612 14.8203 40.4554 17.2728 40.4554 19.2717V20.9483C40.4554 25.4457 38.6404 29.9037 35.0103 34.3221C30.7989 38.4908 25.9093 40.5751 20.3415 40.5751C13.3914 40.5751 7.71378 37.2809 3.30862 30.6927C1.42253 27.1421 0.479492 23.6507 0.479492 20.2185C0.479492 14.5639 2.76604 9.46818 7.33915 4.93134C11.6022 1.64378 15.5036 0 19.0432 0ZM9.81948 17.5753V23.848C9.81948 27.267 10.8852 29.5486 13.0168 30.6927C13.9727 31.245 17.0473 31.4488 22.2405 31.3042C26.2193 31.3042 28.5059 30.8636 29.1001 29.9826C30.4437 28.8911 31.1154 27.0829 31.1154 24.5581V16.4904C31.1154 13.308 30.0109 11.2237 27.8018 10.2375L26.3292 9.74433L24.8371 9.62598H16.2141C13.1395 9.62598 11.0855 11.1514 10.052 14.2023C9.89699 15.1359 9.81948 16.2603 9.81948 17.5753ZM16.5629 11.5591H24.8371C27.8341 11.5591 29.3327 13.1634 29.3327 16.3721V24.9131C28.9322 27.8851 27.7114 29.3711 25.6703 29.3711H22.2405C20.6386 29.3711 18.9463 29.4105 17.1636 29.4894C14.1923 29.4894 12.4548 28.5295 11.951 26.6095C11.796 25.5444 11.7185 23.94 11.7185 21.7965V19.1336C11.7185 15.1228 12.035 13.1174 12.668 13.1174C13.301 12.0785 14.5993 11.5591 16.5629 11.5591ZM24.9533 14.8138C25.3021 15.6159 25.7414 16.017 26.271 16.017C26.8007 16.017 27.2334 15.6159 27.5693 14.8138C27.3885 13.8406 26.9105 13.3541 26.1354 13.3541C25.3474 13.6039 24.9533 14.0905 24.9533 14.8138ZM15.032 20.5933C15.032 23.1839 16.4918 24.9855 19.4114 25.998H21.7754C24.6046 24.9592 26.0191 23.1181 26.0191 20.4749V20.2185C26.0191 18.7194 25.2698 17.3189 23.7713 16.017C22.7508 15.2937 21.6915 14.9321 20.5934 14.9321H20.4771C18.0356 14.9321 16.3368 16.2143 15.3808 18.7786C15.2517 18.9495 15.1354 19.5544 15.032 20.5933ZM20.4771 16.8455H20.5934C22.2986 16.8455 23.4419 17.7726 24.0232 19.6267C24.1007 19.7319 24.1395 20.0147 24.1395 20.4749C23.7649 22.9603 22.5828 24.203 20.5934 24.203C19.0174 24.203 17.8741 23.4009 17.1636 21.7965C17.0602 21.665 16.9763 21.2639 16.9117 20.5933C17.1959 18.0947 18.3844 16.8455 20.4771 16.8455Z"
+                            fill="url(#paint0_linear_2636_248)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_2636_248" x1="-11.8464" y1="70.6683" x2="62.6856"
+                                y2="67.2332" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#0098D9" />
+                                <stop offset="1" stop-color="#33CC33" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="contato-footer">
+                <h3>Contato</h3>
+                <div class="contato">
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2.77075 15.8332C2.45409 15.8332 2.177 15.7144 1.9395 15.4769C1.702 15.2394 1.58325 14.9623 1.58325 14.6457V4.354C1.58325 4.03734 1.702 3.76025 1.9395 3.52275C2.177 3.28525 2.45409 3.1665 2.77075 3.1665H16.2291C16.5458 3.1665 16.8228 3.28525 17.0603 3.52275C17.2978 3.76025 17.4166 4.03734 17.4166 4.354V14.6457C17.4166 14.9623 17.2978 15.2394 17.0603 15.4769C16.8228 15.7144 16.5458 15.8332 16.2291 15.8332H2.77075ZM9.49992 9.85609L2.77075 5.44255V14.6457H16.2291V5.44255L9.49992 9.85609ZM9.49992 8.66859L16.1499 4.354H2.86971L9.49992 8.66859ZM2.77075 5.44255V4.354V14.6457V5.44255Z"
+                            fill="url(#paint0_linear_2636_254)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_2636_254" x1="-3.29869" y1="25.2276" x2="26.1832"
+                                y2="23.5037" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#0098D9" />
+                                <stop offset="1" stop-color="#33CC33" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                    <p>agenciacronus@gmail.com</p>
+                </div>
+
+                <div class="contato">
+                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.7344 15.75C14.2038 15.75 12.6436 15.4 11.0536 14.7C9.46372 14 7.98924 13.0063 6.63021 11.7188C5.27118 10.4313 4.22222 9.03438 3.48333 7.52813C2.74444 6.02188 2.375 4.54375 2.375 3.09375C2.375 2.85268 2.45982 2.65178 2.62946 2.49107C2.7991 2.33036 3.01116 2.25 3.26562 2.25H6.03646C6.22118 2.25 6.37951 2.3125 6.51146 2.4375C6.6434 2.5625 6.73576 2.71875 6.78854 2.90625L7.32151 5.26202C7.34884 5.44151 7.34601 5.60313 7.31302 5.74688C7.28003 5.89063 7.20925 6.01391 7.10068 6.11674L5.12604 8.00625C5.4691 8.55625 5.83194 9.06875 6.21458 9.54375C6.59722 10.0188 7.01944 10.4688 7.48125 10.8938C7.96944 11.3688 8.48403 11.8031 9.025 12.1969C9.56597 12.5906 10.1333 12.9375 10.7271 13.2375L12.6073 11.4C12.7392 11.2625 12.892 11.1688 13.0655 11.1188C13.239 11.0688 13.4095 11.0563 13.5771 11.0813L15.9323 11.5688C16.1302 11.6188 16.2951 11.719 16.4271 11.8696C16.559 12.0201 16.625 12.1886 16.625 12.375V14.9063C16.625 15.1473 16.5402 15.3482 16.3705 15.5089C16.2009 15.6696 15.9888 15.75 15.7344 15.75ZM4.53229 6.975L6.13542 5.4375L5.68021 3.375H3.5625C3.58889 3.9 3.67795 4.45312 3.82969 5.03438C3.98142 5.61563 4.21562 6.2625 4.53229 6.975ZM11.8354 13.7812C12.3764 14.0188 12.9635 14.2125 13.5969 14.3625C14.2302 14.5125 14.8438 14.6 15.4375 14.625V12.6188L13.399 12.225L11.8354 13.7812Z"
+                            fill="url(#paint0_linear_2636_252)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_2636_252" x1="-2.01875" y1="25.7625" x2="24.541"
+                                y2="24.451" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#0098D9" />
+                                <stop offset="1" stop-color="#33CC33" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                    <p>(21) 99837-6234</p>
+                </div>
+            </div>
+
+            <p class="copyright">Copyright © 2023 Inc. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

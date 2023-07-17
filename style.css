@@ -1,0 +1,769 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Poppins:wght@400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Nunito:wght@300;400;500;700;900&family=Poppins:wght@400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;900&family=Montserrat:ital,wght@0,700;1,700&family=Nunito:wght@300;400;500;700;900&family=Poppins:wght@400;500;700;900&display=swap');
+
+/*=============== GLOBAL TAGS AND CLASSES ===============*/
+
+:root {
+  /*========== Primary colors ==========*/
+  --hue-blue: 198;
+  --primary-blue: hsl(var(--hue-blue), 100%, 43%);
+  --primary-green: hsl(calc(var(--hue-blue) - 78), 60%, 50%);
+
+  /*========== Secondary colors ==========*/
+  --gray-headline: hsl(210, 11%, 15%);
+  --gray-paragraph: hsl(210, 9%, 31%);
+  --white: #fff;
+
+  /*========== Font and typography ==========*/
+  --font-headline: 'Poppins', sans-serif;
+  --font-headline: 'DM Sans', sans-serif;
+  --font-paragraph: 'Nunito', sans-serif;
+  --font-paragraph: 'DM Sans', sans-serif;
+  font-size: 62.5%; /* de 16 pra 10 pixels */
+
+  --header-height: 7.2rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  appearance: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-paragraph);
+  font-size: 1.6rem;
+
+  text-align: center;
+
+  background: var(--white);
+}
+
+.wrapper {
+  width: min(50rem, 100%);
+  margin-inline: auto;
+  padding-inline: 2.4rem;
+  padding-top: 6rem;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-headline);
+  font-weight: 700;
+  color: var(--gray-headline);
+}
+
+h1 span, h2 span, h4 {
+  background: var(--main-gradient, linear-gradient(31deg, #0098D9 0%, #3C3 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 130%; /* 3.9rem */
+}
+
+h2 {
+  line-height: 3.9rem;
+  font-size: 3rem;
+  color: var(--gray-headline);
+}
+
+h4 {
+  font-size: 1.4rem;
+  line-height: 150%; /* 2.1rem */
+  letter-spacing: 0.112rem;
+  
+  background: linear-gradient(31deg, #0098D9 0%, #3C3 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: var(--gray-paragraph);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+a,
+button {
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button {
+  padding: 1.6rem 3.2rem;
+  width: 90%;
+
+  font-family: var(--font-headline);
+  font-weight: 700;
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  line-height: normal;
+
+  border-radius: 1rem;
+  background: var(--main-gradient, linear-gradient(31deg, #0098D9 0%, #3C3 100%));
+
+  transition: all 300ms ease;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+/* change colors */
+
+header .logo path[fill*="#00856F"] {
+  
+}
+
+header .open-menu path {
+  
+}
+
+.card svg circle {
+  
+}
+
+#contact .mail-location svg path {
+  
+}
+
+/*=============== header ===============*/
+
+header {
+  display: flex;
+
+  height: var(--header-height);
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+
+  z-index: 100;
+
+  background: white;
+}
+
+header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0;
+}
+
+header .logo-name {
+  display: flex;
+  align-items: center;
+}
+
+header .logo-name h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+header .logo-name h3 span {
+  background: linear-gradient(31deg, #0098D9 0%, #3C3 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*=============== scroll ===============*/
+
+header.scroll {
+  background: var(--main-gradient, linear-gradient(31deg, #0098D9 0%, #3C3 100%));
+  background: var(--gray-headline);
+}
+
+header.scroll linearGradient stop {
+  stop-color: white;
+}
+
+header.scroll .logo-name h3 {
+  color: white;
+}
+
+header.scroll .logo-name h3 span {
+  -webkit-text-fill-color: #fff;
+}
+
+/*=============== menu-expanded ===============*/
+
+body.menu-expanded {
+  overflow: hidden;
+}
+
+body.menu-expanded > :not(header) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.close-menu,
+body.menu-expanded .open-menu {
+  display: none;
+}
+
+body.menu-expanded .close-menu {
+  display: block;
+}
+
+body.menu-expanded .logo,
+body.menu-expanded button {
+  position: relative;
+  z-index: 100;
+}
+
+body.menu-expanded .logo path {
+  fill: #fff;
+}
+
+.menu {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  transform: translateY(100%);
+}
+
+body.menu-expanded .menu {
+  opacity: 1;
+  visibility: visible;
+  top: 0;
+  left: 0;
+  padding-top: var(--header-height);
+
+  width: 100vw;
+  height: 100vh;
+
+  background: var(--brand-green);
+
+  transition: transform 300ms;
+  transform: translateY(0);
+}
+
+.menu .options {
+  margin-top: 6rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+
+.options li a {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.1rem;
+  color: var(--brand-beige);
+}
+
+.menu .button {
+  margin-top: 4.8rem;
+  margin-bottom: 8rem;
+  margin-inline: auto;
+
+  background: #fff;
+
+  color: var(--brand-green);
+}
+
+.menu .button:hover {
+  background-color: var(--brand-green);
+  color: #fff;
+  outline: 1px solid #fff;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+/*=============== #home ===============*/
+
+#home {
+  padding-top: var(--header-height);
+  text-align: center;
+}
+
+#home p {
+  font-size: 1.8rem;
+
+  margin-top: 4rem;
+}
+
+#home .button {
+  margin-top: 3rem;
+}
+
+#home img {
+  margin-top: 3rem;
+}
+
+
+/*=============== #cronus-em-numeros ===============*/
+
+#cronus-em-numeros .numbers {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#cronus-em-numeros .number {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+#cronus-em-numeros .numbers h3 {
+  font-size: 3rem;
+  line-height: 130%; /* 3.9rem */
+}
+
+#cronus-em-numeros .numbers .line {
+  background: var(--main-gradient, linear-gradient(31deg, #0098D9 0%, #3C3 100%));
+  width: 100%;
+  height: 2px;
+}
+
+#cronus-em-numeros .numbers p {
+  font-size: 2rem;
+  line-height: 130%; /* 2.6rem */
+}
+
+/*=============== #servicos ===============*/
+
+#servicos {
+  margin-top: 6rem;
+  background: var(--gray-headline);
+}
+
+#servicos .wrapper {
+  padding-block: 4rem;
+}
+
+#servicos h2 {
+  color: var(--white);
+  line-height: normal;
+}
+
+#servicos img {
+  margin-top: 2rem;
+}
+
+#servicos .servicos-oferecidos {
+  margin-top: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+#servicos .servicos {
+
+}
+
+#servicos .servicos h3 {
+  color: white;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#servicos .servicos .texts {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 1.5rem;
+}
+
+#servicos .servicos .texts .text {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+#servicos .servicos .texts .text img {
+  width: 2.4rem;
+  margin-top: 0.4rem;
+}
+
+#servicos p {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 150%; /* 2.1rem */
+  letter-spacing: 0.112rem;
+}
+
+/*=============== #depoimentos ===============*/
+
+#depoimentos p {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+#depoimentos .mySwiper {
+  margin-top: 4rem;
+}
+
+#depoimentos .swiper-wrapper {
+  padding-bottom: 5.5rem;
+}
+
+#depoimentos .swiper-slide {
+  text-align: left;
+  padding: 2rem 4rem;
+  color: var(--gray-headline);
+
+  border-radius: 2rem;
+  background: linear-gradient(var(--white), var(--white)) padding-box, linear-gradient(to right, var(--primary-blue), var(--primary-green)) border-box;
+  border-bottom: 1rem solid transparent;
+
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.10);
+
+}
+
+#depoimentos .mySwiper .arrows {
+  position: absolute;
+    width: 10rem;
+    height: 3rem;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-inline: auto;
+    z-index: 5;
+}
+
+#depoimentos .mySwiper .swiper-button-prev,
+#depoimentos .mySwiper .swiper-button-next {
+  width: fit-content;
+  height: fit-content;
+  user-select: none;
+}
+
+#depoimentos .mySwiper .swiper-button-prev img,
+#depoimentos .mySwiper .swiper-button-next img {
+  width: 3rem !important;
+  height: 3rem !important;
+  min-height: 3rem !important;
+  min-height: 3rem !important;
+}
+
+
+#depoimentos .mySwiper .swiper-button-next::after,
+#depoimentos .mySwiper .swiper-button-prev::after {
+  display: none;
+}
+
+#depoimentos .swiper-slide p {
+  font-size: 1.6rem;
+}
+
+#depoimentos .swiper-slide p:last-child {
+  font-weight: 700;
+}
+
+#depoimentos .button {
+  margin-top: 3rem;
+}
+
+/*=============== #nosso-time ===============*/
+
+#nosso-time h2 {
+  font-size: 4.8rem;
+  line-height: normal;
+  text-align: left;
+}
+
+#nosso-time .members {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+#nosso-time h3 {
+  margin-top: 1rem;
+  font-size: 2.4rem;
+  line-height: normal;
+  text-align: left;
+}
+
+#nosso-time h3 span {
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*=============== #contato ===============*/
+
+#contato h2 {
+  text-align: left;
+  font-size: 3.4rem;
+  line-height: 130%; /* 4.42rem */
+}
+
+#contato img {
+  margin-top: 2rem;
+  width: 12.4rem;
+}
+
+#contato h4 {
+  margin-top: 1.5rem;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 150%; /* 2.1rem */
+  letter-spacing: 0.112rem;
+}
+
+#contato p {
+  margin-top: 1.5rem;
+
+  color: var(--gray-headline);
+  font-size: 1.8rem;
+  line-height: 130%; /* 2.34rem */
+}
+
+#contato .calendly-inline-widget {
+  margin-top: 4rem;
+}
+
+#contato .reuniao-para h3 {
+  font-size: 2rem;
+  line-height: 150%; /* 3rem */
+  letter-spacing: 0.16rem;
+
+  background: var(--main-gradient, linear-gradient(31deg, #0098D9 0%, #3C3 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+
+#contato .reuniao-para .texts {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#contato .reuniao-para .text {
+  display: flex;
+  gap: 0.8rem;
+}
+
+#contato .reuniao-para .text img {
+width: 3rem;
+height: 3rem;
+margin-top: 0.5rem;
+}
+
+#contato .reuniao-para .text p {
+  text-align: left;
+  font-size: 1.6rem;
+  line-height: 130%; /* 1.82rem */
+  margin-top: 0;
+}
+
+/*=============== #newsletter-ebook ===============*/
+
+#newsletter-ebook {
+
+}
+
+#newsletter-ebook .container {
+  background: var(--gray-headline);
+  border-radius: 2.5rem;
+  padding: 4rem 2rem;
+}
+
+#newsletter-ebook h2 {
+  color: white;
+  text-align: left;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#newsletter-ebook h2 span {
+  font-weight: 700;
+}
+
+#newsletter-ebook p {
+  margin-top: 1.5rem;
+  text-align: left;
+  color: white;
+  font-size: 1.8rem;
+  line-height: normal;
+  width: 98%;
+}
+
+#newsletter-ebook form {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#newsletter-ebook .input-card {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 2rem;
+  background: #F7F9F9;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.8rem;
+}
+
+#newsletter-ebook .input-card img {
+  width: 2.5rem;
+}
+
+#newsletter-ebook .input-text {
+  width: 100%;
+  background: none;
+}
+
+#newsletter-ebook .input-card:nth-child(2) {
+  margin-top: 1.5rem;
+}
+
+#newsletter-ebook .input-text::placeholder {
+  color: var(--gray-paragraph);
+  font-family: DM Sans;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#newsletter-ebook #submit {
+  margin-top: 2.5rem;
+  border-radius: 1rem;
+  padding-block: 1.2rem;
+
+  color: var(--primary-colors-brand-green-light-02, #F7F9F9);
+  font-family: DM Sans;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  background: var(--main-gradient, linear-gradient(31deg, #0098D9 0%, #3C3 100%));
+}
+
+/*=============== footer ===============*/
+
+footer {
+
+}
+
+footer .wrapper {
+
+}
+
+footer .logo {
+  display: flex;
+  align-items: center;
+  
+}
+
+footer .logo svg {
+
+}
+
+footer .logo h3 {
+  font-size: 2rem;
+  line-height: 130%; /* 2.5907rem */
+}
+
+footer p {
+  margin-top: 1rem;
+  text-align: left;
+
+  color: var(--gray-paragraph);
+  font-size: 1.6rem;
+  line-height: 180%; /* 2.88rem */
+}
+
+footer .social-icons {
+  margin-top: 3rem;
+  width: fit-content;
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+footer .contato-footer {
+  margin-top: 3rem;
+  text-align: left;
+}
+
+footer .contato-footer h3 {
+  font-size: 2rem;
+  line-height: 180%; /* 3.6rem */
+
+  margin-bottom: 0.5rem;
+}
+
+footer .contato-footer .contato {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+footer .contato-footer .contato svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+footer .contato-footer .contato p {
+  margin-top: 0;
+
+  font-size: 1.8rem;
+  line-height: 180%; /* 2.52rem */
+}
+
+footer .copyright {
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
