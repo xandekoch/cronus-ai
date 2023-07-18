@@ -306,11 +306,11 @@ body.menu-expanded .menu {
 }
 
 .menu .options {
-  margin-top: 6rem;
+  margin-top: 4rem;
 
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 4rem;
 }
 
 .options li a {
@@ -323,7 +323,8 @@ body.menu-expanded .menu {
 }
 
 .menu .button {
-  margin-top: 6rem;
+  margin-top: 4rem;
+  max-width: 37.5rem;
 }
 
 .menu .button:hover {
