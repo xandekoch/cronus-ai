@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cronus AI</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon-colorido.svg" type="image/x-icon">
 
     <!--Swiper JS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
@@ -49,10 +50,11 @@
 
             <div class="menu">
                 <ul class="options">
-                    <li><a onclick="closeMenu()" href="#home">Sobre</a></li>
-                    <li><a onclick="closeMenu()" href="#services">Artigos</a></li>
-                    <li><a onclick="closeMenu()" href="#about">Ebook Grátis</a></li>
-                    <li><a onclick="closeMenu()" href="#about">Newsletter</a></li>
+                    <li><a onclick="closeMenu()" href="#home">Início</a></li>
+                    <li><a onclick="closeMenu()" href="sobre.html">Sobre</a></li>
+                    <li><a onclick="closeMenu()" href="https://cronus-ia.blog">Artigos</a></li>
+                    <li><a onclick="closeMenu()" href="ebook-newsletter.html">Ebook Grátis</a></li>
+                    <li><a onclick="closeMenu()" href="#newsletter-ebook">Newsletter</a></li>
                 </ul>
 
                 <a class="button" onclick="closeMenu()" href="#contato">
@@ -61,40 +63,59 @@
 
                 <ul class="social-links">
                     <li>
-                        <a target="_blank" href="https://www.instagram.com/agenciacronus">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z"
-                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                <path
-                                    d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z"
-                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M17.5 6.49997H17.51" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
+                        <a target="_blank" href="https://www.instagram.com/cronus.ai">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.25 2.49997H8.75C5.29822 2.49997 2.5 5.29819 2.5 8.74997V21.25C2.5 24.7017 5.29822 27.5 8.75 27.5H21.25C24.7018 27.5 27.5 24.7017 27.5 21.25V8.74997C27.5 5.29819 24.7018 2.49997 21.25 2.49997Z" stroke="url(#paint0_linear_1729_406)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19.9996 14.2126C20.1539 15.2529 19.9762 16.3153 19.4918 17.2488C19.0075 18.1823 18.2411 18.9393 17.3017 19.4122C16.3623 19.885 15.2977 20.0496 14.2594 19.8825C13.221 19.7154 12.2618 19.2252 11.5182 18.4815C10.7745 17.7379 10.2843 16.7787 10.1172 15.7403C9.95014 14.702 10.1147 13.6374 10.5875 12.698C11.0604 11.7586 11.8174 10.9922 12.7509 10.5079C13.6844 10.0235 14.7468 9.84581 15.7871 10.0001C16.8483 10.1574 17.8307 10.6519 18.5893 11.4105C19.3478 12.169 19.8423 13.1514 19.9996 14.2126Z" stroke="url(#paint1_linear_1729_406)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21.875 8.12497H21.8875" stroke="url(#paint2_linear_1729_406)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_1729_406" x1="-5.20833" y1="46.0416" x2="41.3993" y2="43.8614" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#0098D9"/>
+                                <stop offset="1" stop-color="#33CC33"/>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_1729_406" x1="6.97037" y1="27.3627" x2="25.6134" y2="26.4906" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#0098D9"/>
+                                <stop offset="1" stop-color="#33CC33"/>
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_1729_406" x1="21.8711" y1="9.86664" x2="21.8945" y2="9.86662" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#0098D9"/>
+                                <stop offset="1" stop-color="#33CC33"/>
+                                </linearGradient>
+                                </defs>
+                                </svg>
+                                
                         </a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://www.facebook.com/agenciacronus">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M18 1.99997H15C13.6739 1.99997 12.4021 2.52675 11.4645 3.46444C10.5268 4.40212 10 5.67389 10 6.99997V9.99997H7V14H10V22H14V14H17L18 9.99997H14V6.99997C14 6.73475 14.1054 6.4804 14.2929 6.29286C14.4804 6.10533 14.7348 5.99997 15 5.99997H18V1.99997Z"
-                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+                        <a target="_blank" href="https://www.facebook.com/cronus.ai">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.5 2.49997H18.75C17.0924 2.49997 15.5027 3.15845 14.3306 4.33055C13.1585 5.50265 12.5 7.09237 12.5 8.74997V12.5H8.75V17.5H12.5V27.5H17.5V17.5H21.25L22.5 12.5H17.5V8.74997C17.5 8.41845 17.6317 8.10051 17.8661 7.86609C18.1005 7.63167 18.4185 7.49997 18.75 7.49997H22.5V2.49997Z" stroke="url(#paint0_linear_1729_404)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_1729_404" x1="4.51042" y1="46.0416" x2="30.1837" y2="45.3811" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#0098D9"/>
+                                <stop offset="1" stop-color="#33CC33"/>
+                                </linearGradient>
+                                </defs>
+                                </svg>
+                                
                         </a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://www.youtube.com/xandekoch">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M22.5396 6.42C22.4208 5.94541 22.1789 5.51057 21.8382 5.15941C21.4976 4.80824 21.0703 4.55318 20.5996 4.42C18.8796 4 11.9996 4 11.9996 4C11.9996 4 5.1196 4 3.3996 4.46C2.92884 4.59318 2.50157 4.84824 2.16094 5.19941C1.82031 5.55057 1.57838 5.98541 1.4596 6.46C1.14481 8.20556 0.990831 9.97631 0.999595 11.75C0.988374 13.537 1.14236 15.3213 1.4596 17.08C1.59055 17.5398 1.8379 17.9581 2.17774 18.2945C2.51758 18.6308 2.93842 18.8738 3.3996 19C5.1196 19.46 11.9996 19.46 11.9996 19.46C11.9996 19.46 18.8796 19.46 20.5996 19C21.0703 18.8668 21.4976 18.6118 21.8382 18.2606C22.1789 17.9094 22.4208 17.4746 22.5396 17C22.852 15.2676 23.0059 13.5103 22.9996 11.75C23.0108 9.96295 22.8568 8.1787 22.5396 6.42Z"
-                                    stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M9.75 15.02L15.5 11.75L9.75 8.48001V15.02Z" stroke="#FFFAF1" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+                        <a target="_blank" href="https://www.youtube.com/channel/UCAfmCF5vjtAuahStqCQ3Sfg">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28.1745 8.025C28.026 7.43176 27.7236 6.88821 27.2978 6.44926C26.872 6.0103 26.3379 5.69148 25.7495 5.525C23.5995 5 14.9995 5 14.9995 5C14.9995 5 6.39949 5 4.24949 5.575C3.66105 5.74148 3.12697 6.0603 2.70118 6.49926C2.27539 6.93821 1.97298 7.48176 1.82449 8.075C1.43101 10.2569 1.23854 12.4704 1.24949 14.6875C1.23547 16.9213 1.42795 19.1516 1.82449 21.35C1.98819 21.9248 2.29738 22.4477 2.72217 22.8681C3.14697 23.2885 3.67302 23.5923 4.24949 23.75C6.39949 24.325 14.9995 24.325 14.9995 24.325C14.9995 24.325 23.5995 24.325 25.7495 23.75C26.3379 23.5835 26.872 23.2647 27.2978 22.8257C27.7236 22.3868 28.026 21.8432 28.1745 21.25C28.5649 19.0845 28.7574 16.8879 28.7495 14.6875C28.7635 12.4537 28.571 10.2234 28.1745 8.025Z" stroke="url(#paint0_linear_1729_401)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.1875 18.775L19.375 14.6875L12.1875 10.6V18.775Z" stroke="url(#paint1_linear_1729_401)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_1729_401" x1="-7.23083" y1="38.6577" x2="43.9257" y2="35.2522" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#0098D9"/>
+                                <stop offset="1" stop-color="#33CC33"/>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_1729_401" x1="9.97135" y1="24.8381" x2="23.3777" y2="24.2868" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#0098D9"/>
+                                <stop offset="1" stop-color="#33CC33"/>
+                                </linearGradient>
+                                </defs>
+                                </svg>   
                         </a>
                     </li>
                 </ul>
@@ -406,7 +427,7 @@
             <p>Moldando o seu sucesso com Inteligência Artificial.</p>
 
             <div class="social-icons">
-                <a href="#">
+                <a target="_blank" href="https://www.facebook.com/cronus.ai/">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M19.4 0H20.6015C25.5111 0 30.1622 2.08656 34.555 6.25969C37.6429 10.0065 39.3418 13.3979 39.6519 16.4341C39.8845 17.8682 40.0007 18.7791 40.0007 19.1667V20.814C40.0007 23.4755 39.0963 26.5568 37.2876 30.0581C34.6519 34.3734 30.8987 37.3708 26.0279 39.0504C23.5602 39.6835 21.6286 40 20.2333 40H19.7682C14.6648 40 9.92967 37.9457 5.56275 33.8372C1.85474 29.7287 0.000732422 24.9548 0.000732422 19.5155V19.2829C0.000732422 19.1021 0.0394921 18.947 0.117011 18.8178C0.117011 18.7274 0.0782518 18.6822 0.000732422 18.6822C0.504608 14.832 1.53174 11.7183 3.08213 9.34109C5.53691 5.34884 9.32244 2.50646 14.4387 0.813953C16.3509 0.271318 18.0046 0 19.4 0ZM16.6868 12.7713L16.8031 16.4341C16.8031 16.5504 16.6868 16.6731 16.4542 16.8023H14.4387V20.9302H16.4542C16.5705 20.9302 16.6868 21.053 16.8031 21.2984V31.4729L16.8612 32.1899H21.0666V21.1822C21.0925 21.0142 21.17 20.9302 21.2992 20.9302H24.7294C24.8845 20.9302 25.0847 19.6318 25.3302 17.0349V16.8023H21.2992C21.1441 16.8023 21.0666 16.7248 21.0666 16.5698V13.7209C21.0666 12.5065 21.7772 11.8346 23.1984 11.7054H25.5627V8.15891C25.5627 7.92636 24.7359 7.81008 23.0821 7.81008H22.4814C19.7553 7.81008 17.9788 8.83075 17.1519 10.8721C16.9969 11.2984 16.8418 11.9315 16.6868 12.7713Z"
@@ -421,7 +442,7 @@
                     </svg>
                 </a>
 
-                <a href="#">
+                <a target="_blank" href="https://www.youtube.com/channel/UCAfmCF5vjtAuahStqCQ3Sfg">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="20" cy="20" r="20" fill="url(#paint0_linear_2765_156)" />
                         <path
@@ -438,7 +459,7 @@
 
                 </a>
 
-                <a href="#">
+                <a target="_blank" href="https://www.instagram.com/cronus.ai/">
                     <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M19.0544 0H21.9046C24.9552 0 28.4259 1.26398 32.3166 3.79193C35.2509 6.08653 37.3772 8.73764 38.6957 11.7453C39.8849 14.6103 40.4795 17.028 40.4795 18.9985V20.6514C40.4795 25.0851 38.6634 29.4798 35.0311 33.8357C30.8172 37.9452 25.9246 40 20.3535 40C13.3992 40 7.71814 36.7526 3.31032 30.2577C1.4231 26.7574 0.479492 23.3155 0.479492 19.9319C0.479492 14.3575 2.76742 9.33398 7.34328 4.86145C11.6089 1.62048 15.5126 0 19.0544 0ZM9.82511 17.3262V23.51C9.82511 26.8806 10.8915 29.1298 13.0243 30.2577C13.9809 30.8021 17.0573 31.0031 22.2536 30.8605C26.2349 30.8605 28.5228 30.4262 29.1174 29.5576C30.4617 28.4816 31.1339 26.6991 31.1339 24.21V16.2567C31.1339 13.1194 30.0287 11.0647 27.8183 10.0924L26.3447 9.60622L24.8518 9.48955H16.2236C13.1471 9.48955 11.0919 10.9934 10.0578 14.001C9.90266 14.9214 9.82511 16.0298 9.82511 17.3262ZM16.5726 11.3952H24.8518C27.8506 11.3952 29.3501 12.9768 29.3501 16.14V24.56C28.9494 27.4899 27.7278 28.9548 25.6855 28.9548H22.2536C20.6508 28.9548 18.9574 28.9937 17.1736 29.0715C14.2006 29.0715 12.462 28.1251 11.9579 26.2324C11.8028 25.1823 11.7253 23.6007 11.7253 21.4876V18.8624C11.7253 14.9084 12.0419 12.9315 12.6753 12.9315C13.3087 11.9073 14.6078 11.3952 16.5726 11.3952ZM24.9681 14.6038C25.3171 15.3946 25.7566 15.79 26.2866 15.79C26.8165 15.79 27.2496 15.3946 27.5856 14.6038C27.4047 13.6445 26.9264 13.1648 26.1508 13.1648C25.3624 13.4111 24.9681 13.8908 24.9681 14.6038ZM15.0408 20.3014C15.0408 22.8553 16.5015 24.6313 19.4228 25.6296H21.7883C24.6191 24.6054 26.0345 22.7905 26.0345 20.1847V19.9319C26.0345 18.4541 25.2848 17.0734 23.7854 15.79C22.7642 15.077 21.7042 14.7205 20.6055 14.7205H20.4892C18.0461 14.7205 16.3464 15.9844 15.3898 18.5124C15.2606 18.6809 15.1442 19.2773 15.0408 20.3014ZM20.4892 16.6067H20.6055C22.3118 16.6067 23.4557 17.5207 24.0374 19.3486C24.115 19.4523 24.1538 19.731 24.1538 20.1847C23.7789 22.6349 22.5962 23.86 20.6055 23.86C19.0285 23.86 17.8846 23.0692 17.1736 21.4876C17.0702 21.358 16.9862 20.9626 16.9216 20.3014C17.2059 17.8383 18.3952 16.6067 20.4892 16.6067Z"
@@ -494,6 +515,10 @@
             <p class="copyright">Copyright © 2023 Inc. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <a class="wpp" href="https://api.whatsapp.com/send?phone=5521998376234&text=Ol%C3%A1,%20vim%20do%20site%20e%20tenho%20d%C3%BAvidas." target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M3.516 3.516c4.686-4.686 12.284-4.686 16.97 0 4.686 4.686 4.686 12.283 0 16.97a12.004 12.004 0 0 1-13.754 2.299l-5.814.735a.392.392 0 0 1-.438-.44l.748-5.788A12.002 12.002 0 0 1 3.517 3.517zm3.61 17.043.3.158a9.846 9.846 0 0 0 11.534-1.758c3.843-3.843 3.843-10.074 0-13.918-3.843-3.843-10.075-3.843-13.918 0a9.846 9.846 0 0 0-1.747 11.554l.16.303-.51 3.942a.196.196 0 0 0 .219.22l3.961-.501zm6.534-7.003-.933 1.164a9.843 9.843 0 0 1-3.497-3.495l1.166-.933a.792.792 0 0 0 .23-.94L9.561 6.96a.793.793 0 0 0-.924-.445 1291.6 1291.6 0 0 0-2.023.524.797.797 0 0 0-.588.88 11.754 11.754 0 0 0 10.005 10.005.797.797 0 0 0 .88-.587l.525-2.023a.793.793 0 0 0-.445-.923L14.6 13.327a.792.792 0 0 0-.94.23z"/></svg>
+    </a>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="main.js"></script>

@@ -15,15 +15,11 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+// Scroll
 window.addEventListener("scroll", onScroll);
 
-// Scroll
 onScroll();
 function onScroll() {
-  showNavOnScroll();
-}
-
-function showNavOnScroll() {
   if (scrollY == 0) {
     navigationBar.classList.remove("scroll");
   } else {
@@ -31,14 +27,14 @@ function showNavOnScroll() {
   }
 }
 
-// // Menu
-// function openMenu() {
-//   document.body.classList.add("menu-expanded");
-// }
+// Menu
+function openMenu() {
+  document.body.classList.add("menu-expanded");
+}
 
-// function closeMenu() {
-//   document.body.classList.remove("menu-expanded");
-// }
+function closeMenu() {
+  document.body.classList.remove("menu-expanded");
+}
 
 // // Scroll Reveal
 // ScrollReveal({
