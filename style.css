@@ -328,9 +328,7 @@ body.menu-expanded .menu {
 }
 
 .menu .button:hover {
-  background-color: var(--brand-green);
-  color: #fff;
-  outline: 1px solid #fff;
+
 }
 
 .social-links {
@@ -826,4 +824,524 @@ footer .copyright {
 .wpp svg {
   width: 3rem;
   height: 3rem;
+}
+
+/*=============== MEDIA QUERIES ===============*/
+
+/*========== Tablet ==========*/
+@media screen and (min-width: 768px) {
+  
+}
+
+/*========== Desktop ==========*/
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    width: min(116.8rem, 100%);
+    padding-block: 6rem;
+  }
+
+  h2 {
+    font-size: 40px;
+    line-height: 130%; /* 52px */
+  }
+  
+  /*======= header =======*/
+
+  header .wrapper {
+    padding-block: 0;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  header .menu {
+    display: block;
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+
+    transform: none;
+  }
+
+  header .menu .options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    margin: 0;
+  }
+
+  header .menu .options li a {
+    font-size: 1.6rem;
+    font-weight: 700;
+    opacity: 0.9;
+
+    white-space: nowrap;
+  }
+
+  header.scroll .options li a {
+    color: white;
+  }
+
+  header .menu .button {
+    width: fit-content;
+    margin: 0;
+    padding-block: 1.2rem;
+    white-space: nowrap;
+  }
+
+  header .menu .social-links {
+    display: none;
+  }
+
+  header button {
+    display: none;
+  }
+
+  /*======= #home =======*/
+
+  #home .wrapper {
+    padding-top: 8rem;
+    display: grid;
+    grid-template-columns: 63rem 1fr;
+    grid-template-areas: 'A B';
+  }
+
+  #home .texts-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #home h1 {
+    font-size: 48px;
+    line-height: 130%; /* 62.4px */
+    text-align: left;
+  }
+
+  #home p {
+    margin-top: 2rem;
+    text-align: left;
+  }
+
+  #home .button {
+    width: 32rem;
+  }
+
+  /*======= #cronus-em-numeros =======*/
+
+  #cronus-em-numeros h2 {
+    
+  }
+
+  #cronus-em-numeros .numbers {
+    margin-top: 5rem;
+    display: grid;
+    width: fit-content;
+    margin-inline: auto;
+    grid-template-columns: 40rem 40rem;
+    grid-template-areas: 'A B'
+                         'C D';
+    row-gap: 2rem;
+    column-gap: 8rem;
+  }
+
+  /*======= #servicos =======*/
+
+  #servicos {
+    background: white;
+  }
+
+  #servicos .wrapper {
+    padding-block: 6rem;
+    padding-inline: 4rem;
+    background: var(--gray-headline);
+    border-radius: 3rem;
+  }
+
+  #servicos .content {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  #servicos .content img {
+    margin-top: 0;
+    max-width: 42rem;
+    height: fit-content;
+  }
+
+  #servicos .servicos-oferecidos {
+    margin-top: 0;
+    flex-direction: row;
+    gap: 5rem;
+  }
+
+  #servicos .servicos {
+
+  }
+
+  #servicos .servicos h3 {
+    font-size: 3rem;
+  }
+
+  #servicos .servicos .texts {
+    margin-top: 3rem;
+  }
+
+  #servicos .servicos .texts .text {
+    gap: 1rem;
+  }
+
+  #servicos .servicos .texts .text img {
+    width: 3.2rem;
+  }
+
+  #servicos .text p {
+    font-size: 1.8rem;
+  }
+
+  /*======= #depoimentos =======*/
+
+  #depoimentos {
+
+  }
+
+  #depoimentos .wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #depoimentos .texts {
+    text-align: left;
+    max-width: 55rem;
+  }
+
+  #depoimentos h4 {
+
+  }
+
+  #depoimentos h2 {
+
+  }
+
+  #depoimentos p {
+    font-size: 20px;
+    line-height: 130%; /* 26px */
+  }
+
+  #depoimentos .carrossel-button {
+    max-width: 30rem;
+  }
+
+  #depoimentos .mySwiper {
+    margin-top: 0;
+  }
+
+  #depoimentos .swiper-wrapper {
+    padding-bottom: 1.5rem;
+  }
+
+  #depoimentos .swiper-slide {
+
+  }
+
+  #depoimentos .button {
+    width: 100%;
+  }
+
+  /*======= #nosso-time =======*/
+
+  #nosso-time {
+
+  }
+
+  #nosso-time .wrapper {
+
+  }
+
+  #nosso-time h2 {
+    font-size: 8.6rem;
+    line-height: normal;
+  }
+
+  #nosso-time .members {
+    flex-direction: row;
+  }
+
+  #nosso-time .member .img {
+
+  }
+
+  /*======= #contato =======*/
+
+  #contato {
+    /* background: var(--gray-headline); */
+  }
+
+  #contato .wrapper {
+    display: grid;
+    grid-template-areas: 'A B'
+                         'A C';
+    column-gap: 8rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #contato .head {
+    margin-top: 1rem;
+    grid-area: B;
+    max-width: 45rem;
+  }
+
+  #contato .head h2 {
+    /* color: white; */
+  }
+
+  #contato .head p {
+    text-align: left;
+    /* color: white; */
+  }
+
+  #contato .calendly-inline-widget {
+    margin-top: 0;
+    grid-area: A;
+    width: 42rem;
+  }
+
+  #contato .reuniao-para {
+    margin-top: 4rem;
+    grid-area: C;
+    text-align: left;
+    max-width: 45rem;
+  }
+  #contato .reuniao-para h3 {
+    font-size: 2.4rem;
+  }
+
+  #contato .reuniao-para .texts {
+    margin-top: 1.5rem;
+  }
+
+  #contato .reuniao-para .text p {
+    font-size: 1.8rem;
+    /* color: white; */
+  }
+
+  /*======= #newsletter-ebook =======*/
+
+  #newsletter-ebook {
+
+  }
+
+  #newsletter-ebook .wrapper {
+  
+  }
+
+  #newsletter-ebook .container {
+  border-radius: 3rem;
+  }
+
+  #newsletter-ebook h2 {
+    text-align: center;
+    font-size: 60px;
+  }
+
+  #newsletter-ebook p {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 20px;
+    width: 60rem;
+    margin-inline: auto;
+  }
+
+  #newsletter-ebook form {
+    margin-top: 4rem;
+    align-items: center;
+  }
+
+  #newsletter-ebook .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  #newsletter-ebook .input-card {
+    padding-block: 1.7rem;
+    padding-left: 2.5rem;
+    border-radius: 3.8rem;
+    gap: 2rem;
+    width: 35rem;
+  }
+
+  #newsletter-ebook .input-card:nth-child(2) {
+    margin-top: 0;
+  }
+
+  #newsletter-ebook .input-card img {
+    width: 2.7rem;
+  }
+
+  #newsletter-ebook input::placeholder {
+    
+  }
+
+  #newsletter-ebook #submit {
+    margin-top: 3rem;
+    padding-inline: 10rem;
+  }
+
+
+  /*======= footer =======*/
+
+  footer {
+    /* background: var(--gray-headline); */
+  }
+
+  footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer .logo-p {
+    width: 28.5rem;
+    
+  }
+
+  footer .logo {
+
+  }
+
+  footer .logo svg {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  footer .logo h3 {
+    font-size: 2.4rem;
+  }
+
+  footer p {
+    font-size: 20px;
+  }
+
+  footer .wrapper .social-contato {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  footer .social-icons {
+    margin-top: 2rem;
+  }
+
+  footer .social-icons a:hover {
+
+  }
+
+  footer .social-icons a svg:hover stop {
+    stop-color: var(--gray-headline);
+  }
+
+  footer .contato-footer {
+
+  }
+
+  footer .contato-footer h3 {
+    font-size: 2.4rem;
+  }
+
+  footer .contato:hover {
+    opacity: 0.7;
+  }
+
+  footer .contato svg:hover {
+  
+  }
+
+  footer .contato p {
+    font-size: 20px;
+  }
+
+  footer .copyright {
+    align-self: flex-end;
+    font-size: 16px;
+    width: 25rem;
+  }
+
+  /*=============== sobre.html ===============*/
+
+  #home.sobre .wrapper {
+    /* padding-top: 6rem; */
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #home.sobre h1 {
+    width: fit-content;
+    /* margin-inline: auto; */
+  }
+
+  #home.sobre p {
+    width: 80rem;
+    font-size: 2rem;
+    /* margin-inline: auto; */
+  }
+
+  /*=============== ebook-newsletter.html ===============*/
+
+  #newsletter-ebook.newsletter-ebook .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+
+  #newsletter-ebook.newsletter-ebook .texts {
+    max-width: 50rem;
+  }
+
+  #newsletter-ebook.newsletter-ebook h2 {
+    text-align: left;
+    font-size: 4rem;
+  }
+
+  #newsletter-ebook.newsletter-ebook p {
+    font-size: 1.8rem;
+    text-align: left;
+    margin-top: 2rem;
+    width: fit-content;
+  }
+
+  #newsletter-ebook.newsletter-ebook form {
+    align-items: flex-start;
+  }
+
+  #newsletter-ebook.newsletter-ebook .input-card {
+    width: 100%;
+  }
+
+  #newsletter-ebook .input-card:nth-child(2) {
+    margin-top: 1.5rem;
+  }
+
+  #newsletter-ebook.newsletter-ebook #submit {
+    width: 100%;
+    padding-inline: 0;
+    
+  }
+
+  #newsletter-ebook.newsletter-ebook img {
+    margin-top: 0 !important;
+    max-width: 45rem;
+    height: fit-content;
+  }
 }
