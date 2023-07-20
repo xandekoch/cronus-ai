@@ -826,6 +826,10 @@ footer .copyright {
   height: 3rem;
 }
 
+#texts-blog {
+  align-items: center;
+}
+
 /*=============== MEDIA QUERIES ===============*/
 
 /*========== Tablet ==========*/
@@ -1344,4 +1348,10 @@ footer .copyright {
     max-width: 45rem;
     height: fit-content;
   }
+
+  /*=============== blog.html ===============*/
+  
+  #texts-blog {
+    align-items: flex-start;
+  } 
 }
