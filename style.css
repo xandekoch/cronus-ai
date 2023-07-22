@@ -80,6 +80,7 @@ h1 span, h2 span, h4 {
 h1 {
   font-size: 3rem;
   line-height: 130%; /* 3.9rem */
+  /* font-family: 'Poppins', sans-serif; */
 }
 
 h2 {
@@ -422,7 +423,7 @@ body.menu-expanded .menu {
 }
 
 #servicos .servicos {
-
+  max-width: 51.9rem;
 }
 
 #servicos .servicos h3 {
@@ -454,7 +455,7 @@ body.menu-expanded .menu {
 
 #servicos p {
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 150%; /* 2.1rem */
   letter-spacing: 0.112rem;
